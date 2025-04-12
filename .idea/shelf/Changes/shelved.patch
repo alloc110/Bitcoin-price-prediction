@@ -1,0 +1,35 @@
+Index: test.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/test.py b/test.py
+new file mode 100644
+--- /dev/null	(date 1744479974828)
++++ b/test.py	(date 1744479974828)
+@@ -0,0 +1,25 @@
++import pandas as pd
++import numpy as np
++import matplotlib.pyplot as plt
++import torch
++from sklearn.preprocessing import MinMaxScaler
++
++best_model_pathfile = 'train_model_hourly/best_model.pth'
++model = torch.load(best_model_pathfile, weights_only=False)
++list = [0.2658158759314513,0.26213967418002193,0.0841654489847269,0.26086623664147446,0.25961943816344224,0.08102395236472507,0.2592716780375639,0.2565077352435332,0.07615823819799918
++]
++input = np.array(list)
++scaler = MinMaxScaler(feature_range=(0, 1))
++
++device = 'cuda' if torch.cuda.is_available() else 'cpu'
++x_train_tensor = torch.Tensor(input).float().unsqueeze(2).to(device)
++print(x_train_tensor)
++with torch.no_grad():
++    predict = model(x_train_tensor).squeeze().to('cpu')
++output = scaler.inverse_transform(predict.numpy().reshape(-1, 1))
++print(output)
++
++
++
++
++

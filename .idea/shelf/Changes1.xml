@@ -1,0 +1,24 @@
+<changelist name="Changes1" date="1744480240208" recycled="false">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Changes1/shelved.patch" />
+  <option name="DESCRIPTION" value="Changes" />
+  <binary>
+    <option name="AFTER_PATH" value="train_model_hourly/best_model.pth" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes1/best_model.pth" />
+  </binary>
+  <binary>
+    <option name="AFTER_PATH" value="train_model_hourly/best_model_4.pth" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes1/best_model_4.pth" />
+  </binary>
+  <binary>
+    <option name="AFTER_PATH" value="Figure_1.png" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes1/Figure_1.png" />
+  </binary>
+  <binary>
+    <option name="AFTER_PATH" value="train_model_hourly/last_model.pth" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes1/last_model.pth" />
+  </binary>
+  <binary>
+    <option name="AFTER_PATH" value="train_model_hourly/last_model_4.pth" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes1/last_model_4.pth" />
+  </binary>
+</changelist>
