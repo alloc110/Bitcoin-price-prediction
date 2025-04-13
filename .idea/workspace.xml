@@ -5,20 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d7442c3d-49e6-4bdb-b4f7-d7eecaa82779" name="Changes" comment="fa">
-      <change afterPath="$PROJECT_DIR$/DailyModel.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/linearReg.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LSTM_train.py" beforeDir="false" afterPath="$PROJECT_DIR$/LSTM_train.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/test/data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/test/data.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/test/label.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/test/label.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/train/data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/train/data.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/train/label.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/train/label.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensorboard/experiment_3/events.out.tfevents.1744528204.AI.22219.0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensorboard/experiment_3/events.out.tfevents.1744528322.AI.22856.0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensorboard/experiment_3/events.out.tfevents.1744528974.AI.23722.0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensorboard/experiment_3/events.out.tfevents.1744529097.AI.23883.0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/train_model_hourly/best_model_3.pth" beforeDir="false" afterPath="$PROJECT_DIR$/train_model_hourly/best_model_3.pth" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/train_model_hourly/last_model_3.pth" beforeDir="false" afterPath="$PROJECT_DIR$/train_model_hourly/last_model_3.pth" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +103,15 @@
       <option name="project" value="LOCAL" />
       <updated>1744533238082</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="fa">
+      <option name="closed" value="true" />
+      <created>1744553361122</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1744553361122</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -144,5 +139,16 @@
     <MESSAGE value="commit" />
     <MESSAGE value="fa" />
     <option name="LAST_COMMIT_MESSAGE" value="fa" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/DailyModel.py</url>
+          <line>44</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
