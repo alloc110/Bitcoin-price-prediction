@@ -5,19 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d7442c3d-49e6-4bdb-b4f7-d7eecaa82779" name="Changes" comment="fa">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/PTDLv2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GET_DATA.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LSTM_MODEL.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LSTM_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LSTM_train.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/init/bitcoin_historical_data_by_hourly.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/test/test.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DailyModel.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/linearReg.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LSTM_train.py" beforeDir="false" afterPath="$PROJECT_DIR$/LSTM_train.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/test/data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/test/data.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/test/label.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/test/label.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/train/data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/train/data.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/train/label.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/train/label.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorboard/experiment_3/events.out.tfevents.1744528204.AI.22219.0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorboard/experiment_3/events.out.tfevents.1744528322.AI.22856.0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorboard/experiment_3/events.out.tfevents.1744528974.AI.23722.0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorboard/experiment_3/events.out.tfevents.1744529097.AI.23883.0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train_model_hourly/best_model_3.pth" beforeDir="false" afterPath="$PROJECT_DIR$/train_model_hourly/best_model_3.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/train_model_hourly/last_model_3.pth" beforeDir="false" afterPath="$PROJECT_DIR$/train_model_hourly/last_model_3.pth" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,18 +36,18 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="WARN_ABOUT_CRLF" value="false" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "alloc110"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;alloc110&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/alloc110/Predict-bitcoin-price",
-    "accountId": "08586869-5b67-40eb-8696-34d1e1d9ab07"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/alloc110/Predict-bitcoin-price&quot;,
+    &quot;accountId&quot;: &quot;08586869-5b67-40eb-8696-34d1e1d9ab07&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
 }</component>
@@ -60,6 +61,8 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python.Daily.executor": "Run",
+    "Python.DailyModel.executor": "Run",
     "Python.GET_DATA.executor": "Run",
     "Python.LMST_Model.executor": "Run",
     "Python.LSTM_MODEL.executor": "Run",
@@ -97,6 +100,23 @@
       <option name="presentableId" value="Default" />
       <updated>1744363769875</updated>
     </task>
+    <task id="LOCAL-00001" summary="fa">
+      <option name="closed" value="true" />
+      <created>1744533227068</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1744533227068</updated>
+    </task>
+    <task id="LOCAL-00002" summary="fa">
+      <option name="closed" value="true" />
+      <created>1744533238082</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1744533238082</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

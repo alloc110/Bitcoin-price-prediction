@@ -20,15 +20,15 @@ hidden_size = 50
 num_layers = 2
 output_size = 1
 learning_rate = 0.01
-num_epochs = 10
-seq_length = 3
+num_epochs = 100
+seq_length = 5
 
 mode_train = True
 
 
 device = 'cuda' if torch.cuda.is_available else "cpu"
-best_model_pathfile = 'train_model_hourly/best_model_3.pth'
-last_model_pathfile = 'train_model_hourly/last_model_3.pth'
+best_model_pathfile = 'train_model_hourly/best_model_{0}.pth'.format(seq_length)
+last_model_pathfile = 'train_model_hourly/last_model_{0}.pth'.format(seq_length)
 data_train_pathfile = 'data/train/data.csv'
 label_train_pathfile = 'data/train/label.csv'
 data_test_pathfile = 'data/test/data.csv'
@@ -51,7 +51,7 @@ def create_sequences(data, seq_length):
 
 def train_lstm(model, x_train, y_train, criterion, optimizer, num_epochs):
     loss_value = sys.float_info.max
-    writer = SummaryWriter('tensorboard/experiment_3')  # 'runs/experiment_1' là thư mục log
+    writer = SummaryWriter('tensorboard/experiment_{}'.format(seq_length))  # 'runs/experiment_1' là thư mục log
 
     for epoch in tqdm(range(num_epochs)):
         total_loss = 0
@@ -82,6 +82,7 @@ def train_lstm(model, x_train, y_train, criterion, optimizer, num_epochs):
         if loss_value > loss.item():
             torch.save(model, best_model_pathfile)
         torch.save(model, last_model_pathfile)
+    writer.close()
     return model
 
 def plot_results(y_train, train_predict, y_test, test_predict):
@@ -144,8 +145,6 @@ with open(label_test_pathfile, "w", newline='') as file:
     for val in y_test:
         writer.writerow([val])
 
-
-print(x_train.shape)
 x_train_tensor = torch.Tensor(x_train).float().unsqueeze(2).to(device)
 x_test_tensor = torch.Tensor(x_test).float().unsqueeze(2).to(device)
 y_train_tensor = torch.Tensor(y_train).float().to(device)
@@ -155,8 +154,8 @@ model = LSTM_MODEL.LSTM_MODEL(input_size, hidden_size, num_layers, output_size).
 criterion = (nn.MSELoss())
 optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
 
-if(mode_train == False):
-    model = train_lstm(model, x_train_tensor, y_train_tensor, optimizer = optimizer, criterion = criterion  , num_epochs = 1000)
+if(mode_train == True):
+    model = train_lstm(model, x_train_tensor, y_train_tensor, optimizer = optimizer, criterion = criterion  , num_epochs = num_epochs)
 else:
     model = torch.load(best_model_pathfile, weights_only=False)
 #
