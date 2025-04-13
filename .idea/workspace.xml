@@ -4,7 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d7442c3d-49e6-4bdb-b4f7-d7eecaa82779" name="Changes" comment="fa" />
+    <list default="true" id="d7442c3d-49e6-4bdb-b4f7-d7eecaa82779" name="Changes" comment="fa">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/PTDLv2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GET_DATA.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LSTM_MODEL.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LSTM_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LSTM_train.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/init/bitcoin_historical_data_by_hourly.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/test/test.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,6 +35,18 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="WARN_ABOUT_CRLF" value="false" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "alloc110"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/alloc110/Predict-bitcoin-price",
+    "accountId": "08586869-5b67-40eb-8696-34d1e1d9ab07"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
 }</component>
@@ -36,6 +62,7 @@
   "keyToString": {
     "Python.GET_DATA.executor": "Run",
     "Python.LMST_Model.executor": "Run",
+    "Python.LSTM_MODEL.executor": "Run",
     "Python.LSTM_test.executor": "Run",
     "Python.LSTM_train.executor": "Run",
     "Python.get_bitcoin.executor": "Run",
