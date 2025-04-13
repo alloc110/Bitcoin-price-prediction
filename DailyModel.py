@@ -1,3 +1,4 @@
+import pickle
 import sys
 import tqdm
 import pandas as pd
@@ -35,7 +36,6 @@ def create_sequences(data, seq_length):
 
 X, y = create_sequences(df['CBBTCUSD'],  seq_length)
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, shuffle=False)
-
 X_train_tensor = torch.tensor(X_train, dtype=torch.float32).unsqueeze(2)
 y_train_tensor = torch.tensor(y_train, dtype=torch.float32)
 X_test_tensor = torch.tensor(X_test, dtype=torch.float32).unsqueeze(2)
@@ -118,6 +118,10 @@ y_train_actual = scaler.inverse_transform(y_train_tensor.numpy().reshape(-1, 1))
 test_predict = scaler.inverse_transform(test_predict_tensor.numpy().reshape(-1, 1))
 y_test_actual = scaler.inverse_transform(y_test_tensor.numpy().reshape(-1, 1))
 
+scaler_path= 'scaler_daily/scaler.pkl'
+
+with open(scaler_path, 'wb') as f:
+    pickle.dump(scaler, f)
 
 plot_results(y_train_actual, train_predict, y_test_actual, test_predict)
 

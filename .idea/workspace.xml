@@ -5,7 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d7442c3d-49e6-4bdb-b4f7-d7eecaa82779" name="Changes" comment="fa">
+      <change afterPath="$PROJECT_DIR$/data/test/test_daily.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_daily.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DailyModel.py" beforeDir="false" afterPath="$PROJECT_DIR$/DailyModel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/test/data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/test/data.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/test/label.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/test/label.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/train/data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/train/data.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/train/label.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/train/label.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,8 +62,10 @@
     "Python.LSTM_MODEL.executor": "Run",
     "Python.LSTM_test.executor": "Run",
     "Python.LSTM_train.executor": "Run",
+    "Python.LinearReg.executor": "Run",
     "Python.get_bitcoin.executor": "Run",
     "Python.test.executor": "Run",
+    "Python.test_daily.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master",
@@ -111,7 +120,15 @@
       <option name="project" value="LOCAL" />
       <updated>1744553361122</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="fa">
+      <option name="closed" value="true" />
+      <created>1744553481051</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1744553481051</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
