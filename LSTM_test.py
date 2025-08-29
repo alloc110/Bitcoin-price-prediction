@@ -22,7 +22,7 @@ label_train_pathfile = 'data/train/label.csv'
 data_test_pathfile = 'data/test/data.csv'
 label_test_pathfile = 'data/test/label.csv'
 best_model_pathfile = 'train_model_hourly/best_model_4.pth'
-scaler_path = 'scaler/scaler.pkl'
+scaler_path = 'models/scaler/scaler.pkl'
 
 with open(scaler_path, 'rb') as f:
     scaler = pickle.load(f)

@@ -163,7 +163,7 @@ with torch.no_grad():
     train_predict_tensor = model(x_train_tensor).squeeze().to('cpu')
     test_predict_tensor = model(x_test_tensor).squeeze().to('cpu')
 
-scaler_path = 'scaler/scaler.pkl'
+scaler_path = 'models/scaler/scaler.pkl'
 scaler_path1= 'scaler/scaler1.pkl'
 scaler_path2= 'scaler/scaler2.pkl'
 

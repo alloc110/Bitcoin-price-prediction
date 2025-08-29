@@ -8,11 +8,11 @@ import torch.optim
 
 device = 'cuda'
 data_test_pathfile = 'data/test/test.csv'
-scaler_path = 'scaler/scaler.pkl'
-scaler_path1 = 'scaler/scaler1.pkl'
-scaler_path2 = 'scaler/scaler2.pkl'
+scaler_path = 'models/scaler/scaler.pkl'
+scaler_path1 = 'models/scaler/scaler1.pkl'
+scaler_path2 = 'models/scaler/scaler2.pkl'
 
-best_model_pathfile = 'train_model_hourly/last_model_3.pth'
+best_model_pathfile = 'models/train_model_hourly/last_model_3.pth'
 with open(scaler_path, 'rb') as f:
     scaler = pickle.load(f)
 with open(scaler_path1, 'rb') as f:

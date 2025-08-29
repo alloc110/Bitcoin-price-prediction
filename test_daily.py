@@ -7,10 +7,10 @@ data_test_pathfile =  'data/test/test_daily.csv'
 df = pd.read_csv(data_test_pathfile)
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
 
-best_model_path =  'train_model_daily/best_model_5.pth'
+best_model_path = 'models/train_model_daily/best_model_5.pth'
 model = torch.load(best_model_path, weights_only= False)
 
-scaler_path= 'scaler_daily/scaler.pkl'
+scaler_path= 'models/scaler_daily/scaler.pkl'
 with open(scaler_path, 'rb') as f:
     scaler = pickle.load(f)
 

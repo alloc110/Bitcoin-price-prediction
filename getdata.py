@@ -90,5 +90,4 @@ try:
         os.mkdir('data/{0}'.format(dir))
 except FileExistsError:
     print(f"Lỗi: Thư mục ' đã tồn tại.")
-os.mkdir('tensorboar')
 get_data_hourly()

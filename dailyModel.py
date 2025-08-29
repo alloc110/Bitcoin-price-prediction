@@ -118,7 +118,7 @@ y_train_actual = scaler.inverse_transform(y_train_tensor.numpy().reshape(-1, 1))
 test_predict = scaler.inverse_transform(test_predict_tensor.numpy().reshape(-1, 1))
 y_test_actual = scaler.inverse_transform(y_test_tensor.numpy().reshape(-1, 1))
 
-scaler_path= 'scaler_daily/scaler.pkl'
+scaler_path= 'models/scaler_daily/scaler.pkl'
 
 with open(scaler_path, 'wb') as f:
     pickle.dump(scaler, f)
